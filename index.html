@@ -11,24 +11,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="movie">
+    <header class="header">
         <navbar class="movie__navbar">
-            <div class="movie__navbar-brand">
-                <figure class="movie__navbar-logo">
-                    <img src="./assets/imagenes/popcorn.png" alt="" srcset="">
+            <div class="movie__navbar--brand brand">
+                <figure class="movie__navbar--logo">
+                    <img src="./assets/imagenes/popcorn.png" width="50px" height="50px" alt="" srcset="">
                 </figure>
                 <h1 class="movie__navbar--title">
                     PELICULA
                 </h1>
             </div>
-            <form class="movie__navbar--form">
+            <form class="movie__navbar--form form">
                 <input type="seach" class="movie__navbar--form-input" placeholder="Busca tu pelicula, actor, actriz favorito">
             </form>
-            <a class="movie__navbar--user">
-                <span class="movie__navar--user-name">
+            <a class="movie__navbar--user usuario">
+                <span class="movie__navbar--user-name">
                     Alejandro Vera Hernandez
                 </span>
-                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu848LBNTRgJtKJZ7PhutXYtqMbYo_hxbCn1b9zXMg=s32-c-mo" alt="" class="movie__navbar--user-image">
+                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu848LBNTRgJtKJZ7PhutXYtqMbYo_hxbCn1b9zXMg=s32-c-mo" alt="" class="movie__navbar--user-image" width="50px" height="50px">
             </a>
         </navbar>
     </header>
@@ -38,7 +38,7 @@
             <li class="menu__list--item">
                 <a href="#">
                     <i class="fa fa-home">
-                        ::before
+                        <img src="./assets/icons/home.svg" width="40px" alt="">
                     </i>
                     <p>Home</p>
 
@@ -47,7 +47,7 @@
             <li class="menu__list--item">
                 <a href="#">
                     <i class="fa fa-fire">
-                        ::before
+                        <img src="./assets/icons/fire.svg" width="40px" >
                     </i>
                     <p>Trending</p>
 
@@ -56,7 +56,7 @@
             <li class="menu__list--item">
                 <a href="#">
                     <i class="fa fa-heart">
-                        ::before
+                        <img src="./assets/icons/heart.svg" width="40px">
                     </i>
                     <p>Mas likes</p>
 
@@ -68,7 +68,7 @@
             <li class="menu__list--item">
                 <a href="#">
                     <i class="fafa-cog">
-                        ::before
+                        <img src="./assets/icons/settings.svg" width="40px"> 
                     </i>
                     <p>
                         Ajustes
@@ -80,7 +80,7 @@
     </aside>
 
 
-    <section class="movies">
+    <section class="pelis">
         <span class="movies__flecha fa fa-angle-right">
 
         </span>
@@ -107,7 +107,7 @@
                         The secret lif of pets
                     </h3>
                     <p class="movies__container--item-overlay-paragraph">
-                        The quiet lif of a terrier named Max is unpended when his owner takes in Dukes.
+                        The quiet lif of a terrier named Max is unpended when his owner takes in Dukes a stray whom Max instantly dislikes
                     </p>
 
                 </div>
@@ -194,7 +194,7 @@
 
                 </div>
             </a>
-            
+
             <a href="#" class="movies__container--item">
                 <img src="./assets/imagenes/pets.jpg" alt="Pelicula de mascotas" class="movies__container--item-image">
                 <div class="movies__container--item-overlay">

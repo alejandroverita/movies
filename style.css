@@ -4,3 +4,199 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 70px 1fr;
+    /* font-family: Lato, sans-serif; */
+    grid-template-areas: "header header"
+                         "aside pelis";
+    /* height: 100vh; */
+                        
+}
+
+
+
+.header{
+    grid-area: header;
+    margin: 0 15px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.pelis {
+    grid-area: pelis;
+}
+
+
+.movie__navbar{
+    display: grid;
+    grid-template-columns: 25% 1fr 20%;
+    grid-auto-rows: 70px;
+    grid-template-areas: " brand form usuario";
+    grid-gap: 10px;
+}
+
+.brand{
+    grid-area:brand;
+}
+.form{
+    grid-area:form;
+}
+.usuario{
+    grid-area:usuario;
+}
+
+.movie__navbar--brand {
+    /* grid-area: brand; */
+    display: flex;
+    align-items: center;
+    -webkit-box-align;
+}
+
+.movie__navbar--logo{
+    width: 50px;
+    margin: 0px;
+}
+
+.movie__navbar--title{
+    margin:0;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px #fd6766;
+}
+
+.movie__navbar--form{
+    /* grid-area: form; */
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.movie__navbar--form-input{
+    width: 100%;
+    border-radius: .25rem;
+    box-shadow: none;
+    border: 1px solid #b2b1b6;
+    padding: .5rem;
+}
+
+.movie__navbar--user{
+    /* grid-area: usuario; */
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.movie__navbar--user-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.movie__navbar--user  img {
+    border-radius: 50%;
+}
+
+.menu{
+    align-content: space-between;
+    background: #fd6766;
+    display: grid;
+    grid-area: aside;
+    padding: 3em 0;
+    z-index: 2;
+}
+
+.menu__list {
+    display:grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    list-style:none;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.menu__list--item{
+    padding-bottom: 1em;
+}
+
+.menu__list--item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu__list--item a i {
+    font-size: 3.5rem;
+}
+
+.menu__list--item a p {
+    font-size: 2rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+
+}
+
+
+.pelis {
+    grid-area: pelis;
+    padding: 1em 3em;
+}
+
+.movies__title{
+    font-size: 1.6rem;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+.movies__container{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.movies__container--item{
+    position: relative;
+    color: white;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.movies__container--item-image{
+    width: 100%;
+    vertical-align: top;
+}
+
+.movies__container--item-overlay{
+    background: rgba(253, 103, 102, .729);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    padding: .5em;
+    height: 50%;
+    transition: .3s;
+}
+
+.movies__container--item-overlay-title{
+    margin: 0 0 .5em;
+}
+
+.movies__container--item-overlay-paragraph{
+    margin: 0;
+    font-weight: 300;
+}
